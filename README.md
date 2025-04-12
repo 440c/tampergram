@@ -5,6 +5,7 @@ A plugin for instagram via tampermonkey to change your current instagram name.
 
 - This script is only local and doesn't change for other users.
 - I also made this because someone in a discord call asked me to!
+- They gave me code that never worked and i fixed some issues half of the code isn't mine.
 
 ## Features
 
