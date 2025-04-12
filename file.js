@@ -17,6 +17,7 @@
         '': '',
     };
 
+    // -- Not created by ozu
     function replaceTextNodes(node) {
         if (node.nodeType === Node.TEXT_NODE) {
             for (const [oldText, newText] of Object.entries(textReplacements)) {
@@ -29,6 +30,7 @@
         }
     }
 
+    // -- Created by ozu
     function updateURL(newText) {
         const baseURL = 'https://www.instagram.com/';
         const newURL = baseURL + newText;
@@ -37,7 +39,8 @@
         window.history.replaceState({ path: newURL }, '', newURL)
         sessionStorage.setItem('oldURL', oldURL);
     }
-
+    
+    // -- Created by ozu
     function replaceContent() {
         replaceTextNodes(document.body);
         for (const [oldText, newText] of Object.entries(textReplacements)) {
